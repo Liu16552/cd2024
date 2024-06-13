@@ -131,7 +131,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li><a href='cmsimde.html'>cmsimde</a><li><a href='Replit.html'>Replit</a><li><a href='Brython.html'>Brython</a><li><a href='w12.html'>w12</a><li><a href='協同資料分類.html'>協同資料分類</a></li>
+                     <li><a href='About.html'>About</a><li><a href='cmsimde.html'>cmsimde</a><li><a href='Replit.html'>Replit</a><li><a href='Brython.html'>Brython</a><li><a href='w12.html'>w12</a><li><a href='協同資料分類.html'>協同資料分類</a><li class='has-children'><a href='W17.html'>W17</a><ul class='dropdown'><li><a href='評量項目一.html'>評量項目一</a><li><a href='評量項目二.html'>評量項目二</a></li>
                       </ul>
                 </nav>
               </div>
@@ -142,14 +142,12 @@ img.add_border {
           </div>
 
         </header>
-    <div id="tipue_search_content">w12 << <a href='w12.html'>Previous</a> <br /><h1>協同資料分類</h1>
+    <div id="tipue_search_content">w12 << <a href='w12.html'>Previous</a> <a href='W17.html'>Next</a> >> W17<br /><h1>協同資料分類</h1>
 <p>顯示倉儲和網站</p>
 <p>from browser import window, ajax</p>
 <p>def fetch_csv_data():<br/> url = "https://mdecd2024.github.io/2bstud-2bsite/downloads/2b.txt"<br/> <br/> def on_complete(req):<br/> if req.status == 200 or req.status == 0:<br/> content = req.text<br/> lines = content.split('\n')<br/> for line in lines:<br/> if line.strip() == "":<br/> continue<br/> items = line.split(',')<br/> if len(items) &gt;= 3:<br/> github_username_1 = items[1].strip() # 第三個逗號後到第四個逗號前的數據<br/> team = items[2].strip() # 第四個逗號後的數據<br/> team2 = items[2].strip()<br/> github_url_1 = f"個人倉儲:https://github.com/{github_username_1}/cd2024"<br/> team = f"分組倉儲:https://github.com/mdecd2024/2b-midbg{team}"<br/> team2 = f"分組網頁:https://mdecd2024.github.io/2b-midbg{team2}"<br/> csv_data = items[1].strip() # 取得 CSV 中第三個逗號後的資料<br/> github_io_url = f"個人網頁:https://{csv_data}.github.io/cd2024/" # 新的 GitHub IO URL<br/> line_with_urls = f"{line.strip()},{github_url_1},{github_io_url},{team},{team2}" # 以逗號分隔的資料串<br/> print(line_with_urls)<br/> else:<br/> print("Error:", req.text)<br/> <br/> req = ajax.ajax()<br/> req.bind('complete', on_complete)<br/> req.open('GET', url, True)<br/> req.set_header('content-type', 'application/x-www-form-urlencoded')<br/> req.send()</p>
 <p>fetch_csv_data()</p>
-<p>
-<script src="https://unpkg.com/three@0.144.0/build/three.js" type="text/javascript"></script>
-</p><br />w12 << <a href='w12.html'>Previous</a> </div>
+<br />w12 << <a href='w12.html'>Previous</a> <a href='W17.html'>Next</a> >> W17</div>
 
     <!-- footer -->
       <div class="container">

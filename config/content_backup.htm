@@ -324,7 +324,14 @@ doc["threejsblock"].bind("click", threejsblock.do)
 <h1>w12</h1>
 <p><a href="/get_page/w12/init_replit">零件1檔案</a></p>
 <p><iframe allowfullscreen="allowfullscreen" height="314" src="//www.youtube.com/embed/7TIj3dZD3IE" width="560"></iframe></p>
-<!-- editor2 結束 --><hr/>
+<h1>協同資料分類</h1>
+<p>顯示倉儲和網站</p>
+<p>from browser import window, ajax</p>
+<p>def fetch_csv_data():<br/> url = "https://mdecd2024.github.io/2bstud-2bsite/downloads/2b.txt"<br/> <br/> def on_complete(req):<br/> if req.status == 200 or req.status == 0:<br/> content = req.text<br/> lines = content.split('\n')<br/> for line in lines:<br/> if line.strip() == "":<br/> continue<br/> items = line.split(',')<br/> if len(items) &gt;= 3:<br/> github_username_1 = items[1].strip() # 第三個逗號後到第四個逗號前的數據<br/> team = items[2].strip() # 第四個逗號後的數據<br/> team2 = items[2].strip()<br/> github_url_1 = f"個人倉儲:https://github.com/{github_username_1}/cd2024"<br/> team = f"分組倉儲:https://github.com/mdecd2024/2b-midbg{team}"<br/> team2 = f"分組網頁:https://mdecd2024.github.io/2b-midbg{team2}"<br/> csv_data = items[1].strip() # 取得 CSV 中第三個逗號後的資料<br/> github_io_url = f"個人網頁:https://{csv_data}.github.io/cd2024/" # 新的 GitHub IO URL<br/> line_with_urls = f"{line.strip()},{github_url_1},{github_io_url},{team},{team2}" # 以逗號分隔的資料串<br/> print(line_with_urls)<br/> else:<br/> print("Error:", req.text)<br/> <br/> req = ajax.ajax()<br/> req.bind('complete', on_complete)<br/> req.open('GET', url, True)<br/> req.set_header('content-type', 'application/x-www-form-urlencoded')<br/> req.send()</p>
+<p>fetch_csv_data()</p>
+<h1>W17</h1>
+<h2>評量項目一</h2>
+<p><iframe allowfullscreen="allowfullscreen" height="314" src='//www.youtube.com/embed/u_FxQgxKRGM?si=0LXJLnl_G-_uv-zX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;' width="560"></iframe></p>
 <p>
 <script src="https://unpkg.com/three@0.144.0/build/three.js" type="text/javascript"></script>
 </p>
